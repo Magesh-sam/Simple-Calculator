@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <h3 class="mt-5 mb-5" style="text-align: center;">Simple Calculator</h3>
+    <form action="">
+        <div class="form-group ">
+            <input id="firstnumber" class="form-control col-4 " style="margin: auto; margin-top: 100px; margin-bottom: 40px;" type="number" placeholder="Enter First Number:" required>
+            <br>
+            <input id="secondnumber" class="form-control col-4" style="margin: auto; margin-bottom: 20px;" type="number" placeholder="Enter Second Number:" required>
+            <br>
+            <span id="error" class="d-flex justify-content-center" style="margin-bottom: 30px;">Answer is: <span id="answer" class="ml-4" style="width: 150px; height: 30px; border: 2px solid rgb(21, 220, 247); border-radius: 10px; text-align: center; font-weight: bold;"></span></span>
+            <br>
+            <div class="d-flex justify-content-center">
+                <button class="btn btn-lg btn-primary mr-5" type="button" onclick="addition()">Add</button>
+                <button class="btn btn-lg btn-primary mr-5" type="button" onclick="subtraction()">Subtract</button>
+                <button class="btn btn-lg btn-primary mr-5" type="button" onclick="multiplication()">Multiply</button>
+                <button class="btn btn-lg btn-primary mr-5" type="button" onclick="division()">Divide</button>
+
+            </div>
+            <div class="d-flex justify-content-center mt-5">
+                <button class="btn btn-lg btn-primary" type="reset">Clear</button>
+            </div>
+        </div>
+        <a class="d-flex justify-content-center mt-5" href="https://mageshkannan.netlify.app/" target="_blank">
+            <p style="font-size: large;">Developed by <span style="font-weight: bold; color: black; text-decoration: underline;"> Mageshkannan</span></p>
+        </a>
+    </form>
+</body>
+
+</html>
