@@ -27,13 +27,18 @@
 
             </div>
             <div class="d-flex justify-content-center mt-5">
-                <button class="btn btn-lg btn-primary" type="reset" onClick= () =>{document.getElementById("answer").value=0 }>Clear</button>
+                <button class="btn btn-lg btn-primary" type="reset" onClick="clearanswer()">Clear</button>
             </div>
         </div>
         <a class="d-flex justify-content-center mt-5" href="https://mageshkannan.netlify.app/" target="_blank">
             <p style="font-size: large;">Developed by <span style="font-weight: bold; color: black; text-decoration: underline;"> Mageshkannan</span></p>
         </a>
     </form>
+    <script>
+        const clearanswer = () =>{
+            document.getElementById("answer").innerText=""
+        }
+    </script>
 </body>
 
 </html>
